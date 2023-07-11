@@ -1,0 +1,7 @@
+# COMP6845 | TITLE
+
+```
+Version: XX.YY (YYYYMMDD)
+Maintainer: Andrew Wong (andrew.j.wong@unsw.edu.au)
+```
+
