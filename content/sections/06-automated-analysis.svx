@@ -1,0 +1,12 @@
+## Automated Analysis with ALEAPP
+
+Whilst manually trawling through the file system and known database files has its advantages, it is much more worthwhile (for the sake of timeboxing your investigation) to use scripts and tools to automate the repetitive steps.
+
+---
+
+[ALEAPP (Android Logs Events And Protobuf Parser)](https://github.com/abrignoni/ALEAPP) is a tool that performs a suite of analysis processes on Android images.  
+It generates a report (as a webpage) with all of the process results.
+
+If you'd like to use ALEAPP to process the provided logical extraction yourself, you may refer to [these instructions](https://www.arcpointforensics.com/news/getting-started-with-aleapp).  
+Otherwise, a pre-generated ALEAPP report has been provided at [this link](https://featherbear.cc/UNSW-COMP6845-android-aleapp)
+

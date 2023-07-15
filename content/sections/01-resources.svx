@@ -1,0 +1,53 @@
+## Resources
+
+### Device Image
+
+Download: [Android Image - 2023-05-09 12-15-59.zip](https://drive.google.com/file/d/1ZTEuo2CT7rCGwZY1W_ZqO9Ljhx4eV073/view?usp=drive_link)  
+Type: Logical Image  
+md5sum: `22a2f4f662a0545ca51dcf1095df2373`  
+sha1sum: `30383a139b50bcf24b4c1f511fe7c4bc7e9a989b`  
+
+> Do you remember what the difference is between a Logical Image, a File System Image, and a Physical Image?
+
+---
+
+### SQLite Browser (or an SQL browser of choice)
+
+> A desktop tool to analyse SQLite files (as well as SQLCipher used in this lab)
+
+Download: [sqlitebrowser.org](https://sqlitebrowser.org/dl/)
+
+---
+
+### HxD (or a hex editor of choice)
+
+> A hex editor
+
+Download: [mh-nexus.de](https://mh-nexus.de/en/hxd/)
+
+---
+
+### ALEAPP (optional)
+
+> ALEAPP is a forensics tool to analyse the contents of an Android device
+
+Download: [abrignoni/ALEAPP](https://github.com/abrignoni/ALEAPP)  
+Download (Windows): [aleappGUI.exe v3.1.8](https://github.com/abrignoni/ALEAPP/releases/download/v3.1.8/aleappGUI.exe)
+
+Pre-generated report: [UNSW-COMP6845-android-aleapp](https://featherbear.cc/UNSW-COMP6845-android-aleapp)
+
+---
+
+### SANS FOR585 Poster (optional)
+
+Download: [[GitHub Mirror]](https://github.com/featherbear/UNSW-COMP6845-android/raw/master/SANS_DFPS_FOR585_v3.8_04-23.pdf) [[CyberBlue.pro Mirror]](https://cyberblue.pro/Sans_Posters/) [[Internet Archive Mirror]](https://web.archive.org/web/20180629023352/https://www.sans.org/security-resources/posters/dfir-advanced-smartphone-forensics/30/download)
+
+---
+
+### Magnet Acquire (optional)
+
+> Acquire is a tool to create forensic images of iOS and Android devices, as well as hard drives and other storage mediums
+
+The image of the Google Pixel 6 Pro phone has already been acquired so this is not required for the lab.  
+However if you wish to try out the program in your own time you may download it [here (Windows only)](https://www.magnetforensics.com/dl/acquire)
+

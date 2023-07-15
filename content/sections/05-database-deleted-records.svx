@@ -1,0 +1,47 @@
+## Deleted SMS records
+
+On an Android device there are several locations in a file system extraction that can yield deleted text messages
+
+* e.g. the SMS Database
+* e.g. the SMS Journal
+
+Generally SQLite databases retain deleted data until they are compressed.  
+On some phones there is a setting to automatically compress the database, however it varies.
+
+Whilst the database is not yet compressed, deleted data lingers around in the database file but are no longer linked to the database structure.
+
+---
+
+Before we start looking for deleted messages let's first have a read of the below blog post, and understand how messages are stored in the SQLite database at a byte level.
+
+> http://az4n6.blogspot.com/2013/02/finding-and-reverse-engineering-deleted_1865.html
+
+See if you can find any data that you didn't see in the SQLite Browser. We recommend to use [HxD](https://mh-nexus.de/en/hxd/) on Windows.
+
+---
+
+### Write Ahead Logging
+
+To mitigate the event of catastrophic data failure (i.e. corruption due to a power loss or disconnection), certain systems implement something known a _journal_, or _commit log_ - where changes to be made in a database are recorded on another file before the actual modification is made. This way, in the event of a write event failing, a history of changes can be replayed to ensure that the modification will eventually be applied in the database.
+
+In SQLite databases, a Write Ahead Log can be used to provide similar methods of redunancy...
+
+> _The traditional rollback journal works by writing a copy of the original unchanged database content into a separate rollback journal file and then writing changes directly into the database file. In the event of a crash or ROLLBACK, the original content contained in the rollback journal is played back into the database file to revert the database file to its original state. The COMMIT occurs when the rollback journal is deleted._
+>  
+> _The WAL approach inverts this. The original content is preserved in the database file and the changes are appended into a separate WAL file. A COMMIT occurs when a special record indicating a commit is appended to the WAL. Thus a COMMIT can happen without ever writing to the original database, which allows readers to continue operating from the original unaltered database while changes are simultaneously being committed into the WAL. Multiple transactions can be appended to the end of a single WAL file._  
+>  
+> _Source: https://www.sqlite.org/wal.html_
+
+The contents of the WAL are periodically moved to the DB file but this is not guaranteed to occur each time the process exits. Therefore, when WAL is enabled - each SQLite DB consists of two files on disk that must be preserved, both the `.db` file and the `.db-wal` file.
+
+It's also worthwhile to read this blog: [The Forensic Implications of SQLite's Write Ahead Log](https://digitalinvestigation.wordpress.com/2012/05/04/the-forensic-implications-of-sqlites-write-ahead-log/)
+
+---
+
+> An extraction of the Android Messages WAL from the device can be found [here](https://featherbear.cc/UNSW-COMP6845-android-aleapp/SQLite%20Journaling/11_bugle_db-wal.txt)
+
+![](images/Snipaste_2023-07-16_02-32-33.png)
+
+Extracting dates and times from the WAL file is a complicated process and will not be covered in the tutorial.   
+If you want to learn more, read [Timelining using SQLite Write Ahead Logs](https://askclees.com/2020/10/11/timelining-using-sqlite-write-ahead-logs/)
+

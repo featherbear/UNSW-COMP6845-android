@@ -1,0 +1,10 @@
+## SMS Messages
+
+It is suspected that the owner of the phone was about to strike a deal for some fruit.  
+This suggests that some sort of communication would have been done, and so it would be wise as a forensics investigator to first start looking at SMS messages, as well as other messaging services / applications
+
+The locations of SMS messages can differ depending on the phone model, Android OS version, and SMS application.  
+In the Android phone image provided, SMS messages can be found in `/data/com.android.providers.telephony/databases/mmssms.db`.  
+
+![](images/Snipaste_2023-07-16_01-31-21.png)
+

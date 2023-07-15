@@ -1,7 +1,14 @@
-# COMP6845 | TITLE
+# COMP6845 | Android Forensics
 
 ```
-Version: XX.YY (YYYYMMDD)
+Version: 1.0 (20230702)
 Maintainer: Andrew Wong (andrew.j.wong@unsw.edu.au)
 ```
 
+```
+Special thanks to Wesley Lacy for providing the lesson plan and resources
+```
+
+Let's dig into performing forensic analysis of an Android device!  
+The device used in the lab is a Google Pixel 6 Pro, and was seized by the Western Australian Police (Perth) during a suspected 'fruit' dealing.  
+You've been engaged to gather any intelligence on the phone, and to report back findings.

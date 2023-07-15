@@ -1,0 +1,16 @@
+## Chain of Custody
+
+This phone was acquired by the police, and a _chain of custody_ has been performed.  
+You've been provided with a journal of the phone's acquisition.
+
+* **Device was placed in a Faraday bag**
+* Flight mode was enabled
+* SIM card was removed
+* **Device was removed from the Faraday bag**
+* Started _Magnet Acquire_
+* Connected phone to _Magnet Acquire_
+* Confirmed that serial number matched the serial in the _chain of custody_
+* Noted that the device was not rooted
+* Rooted the device to allow for full system access during acquisition
+* Created a _logical image_ of the device in _Magnet Acquire_
+

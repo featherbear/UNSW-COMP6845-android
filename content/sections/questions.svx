@@ -1,0 +1,21 @@
+## Questions
+
+> Some of these questions will require you to do some of your own research and investigation.  
+> Also, ALEAPP should help answer lots of these questions
+
+### 1. How much fruit was being purchased? 
+
+### 2. What was the address for the place of transaction for the fruit?
+
+### 3. There are deleted SMS messages on the phone. What person's name is mentioned in those messages?
+
+### 4. How many applications were "single_install"-ed?
+
+### 5. How many encrypted photos were found in the supposed "Calculator" app
+
+### 6. Of the encrypted photos in the Calculator app, which city / suburb were the photos taken?
+
+### 7. What was the WPA_PSK value at the time the phone was first seized and analysed?
+
+### 8. How much do peaches cost?
+

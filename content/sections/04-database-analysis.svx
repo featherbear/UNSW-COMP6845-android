@@ -1,0 +1,48 @@
+## Database analysis of SMS messages
+
+![](images/Snipaste_2023-07-16_01-34-40.png)
+
+Generally, with any database analysis task - we should first review the database schema - as it will help assist us in navigating the structure, and provide insight into how the application developer has laid out their data.
+
+---
+
+![](images/Snipaste_2023-07-16_01-38-31.png)
+
+We can then browse the data in the database tables
+
+---
+
+If we look at the `threads` table, we can also see all the different conversations that phone was active in.
+
+![](images/Snipaste_2023-07-16_01-53-14.png)
+
+---
+
+As with SQL databases, all SMS messages will be stored in the same table - meaning that in order to view messages of a particular thread, we will need to filter the messages based off a key - e.g. `thread_id`
+
+> sqlite> `SELECT address, body AS messages, datetime(date/1000, 'unixepoch', 'localtime') AS dates FROM sms WHERE thread_id='3'`
+
+![](images/Snipaste_2023-07-16_01-50-53.png)
+
+---
+
+> How many messages were retrieved from the above SQL query?
+
+> What's the value of `message_count` for that `thread_id` in the `threads` table?
+
+For `thread_id=3`, the SQL query returned 11 messages, however according to the `threads` table, `message_count=17` for thread 3... This flags that there is likely some deleted messages in the thread!
+
+---
+
+### Deleted files?
+
+Oh I know, look at the <s>recycle bin</s> or the <s>unallocated space</s>.  
+
+* A recycle bin only exists if both the application and system supports such functionality
+* Unallocated space is only captured in an image if a physical image acquisition (bit for bit) was performed
+
+As a logical image was acquired and provided, no unallocated space was captured - only space where files actually are registered to exist.
+
+**_But interestingly, databases don't really delete data.._**
+
+> Big data, or something idk.
