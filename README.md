@@ -4,4 +4,4 @@
 
 ---
 
-> https://featherbear.cc/UNSW-COMP6845-android - View all sections
+> https://featherbear.cc/UNSW-COMP6845-android#all - View all sections
