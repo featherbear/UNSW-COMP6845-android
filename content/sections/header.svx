@@ -1,7 +1,7 @@
 # COMP6845 | Android Forensics
 
 ```
-Version: 1.0 (20230702)
+Version: 1.1 (20240708)
 Maintainer: Andrew Wong (andrew.j.wong@unsw.edu.au)
 ```
 
