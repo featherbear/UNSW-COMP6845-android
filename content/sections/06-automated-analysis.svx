@@ -8,5 +8,6 @@ Whilst manually trawling through the file system and known database files has it
 It generates a report (as a webpage) with all of the process results.
 
 If you'd like to use ALEAPP to process the provided logical extraction yourself, you may refer to [these instructions](https://www.arcpointforensics.com/news/getting-started-with-aleapp).  
-Otherwise, a pre-generated ALEAPP report has been provided at [this link](https://featherbear.cc/UNSW-COMP6845-android-aleapp)
+
+<!-- Otherwise, a pre-generated ALEAPP report has been provided at [this link](https://featherbear.cc/UNSW-COMP6845-android-aleapp) -->
 
