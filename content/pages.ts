@@ -15,7 +15,7 @@ const pages = [
   ["Database Analysis", DatabaseAnalysis],
   ["Deleted Database Records", DatabaseDeletedRecords],
   ["Automated Analysis", AutomatedAnalysis],
-  ["Questions", Questions],
+  // ["Questions", Questions],
 ] satisfies [string, any][];
 
 export default pages
