@@ -34,7 +34,7 @@ Download: [mh-nexus.de](https://mh-nexus.de/en/hxd/)
 Download: [abrignoni/ALEAPP](https://github.com/abrignoni/ALEAPP)  
 Download (Windows): [aleappGUI.exe v3.1.8](https://github.com/abrignoni/ALEAPP/releases/download/v3.1.8/aleappGUI.exe)
 
-Pre-generated report: [UNSW-COMP6845-android-aleapp](https://featherbear.cc/UNSW-COMP6845-android-aleapp)
+<!-- Pre-generated report: [UNSW-COMP6845-android-aleapp](https://featherbear.cc/UNSW-COMP6845-android-aleapp) -->
 
 ---
 
