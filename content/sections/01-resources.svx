@@ -31,8 +31,8 @@ Download: [mh-nexus.de](https://mh-nexus.de/en/hxd/)
 
 > ALEAPP is a forensics tool to analyse the contents of an Android device
 
-Download: [abrignoni/ALEAPP](https://github.com/abrignoni/ALEAPP)  
-Download (Windows): [aleappGUI.exe v3.1.8](https://github.com/abrignoni/ALEAPP/releases/download/v3.1.8/aleappGUI.exe)
+GitHub: [abrignoni/ALEAPP](https://github.com/abrignoni/ALEAPP)  
+Download: [aleappGUI v3.4.0](https://github.com/abrignoni/ALEAPP/releases/tag/v3.4.0)
 
 <!-- Pre-generated report: [UNSW-COMP6845-android-aleapp](https://featherbear.cc/UNSW-COMP6845-android-aleapp) -->
 
@@ -40,7 +40,7 @@ Download (Windows): [aleappGUI.exe v3.1.8](https://github.com/abrignoni/ALEAPP/r
 
 ### SANS FOR585 Poster (optional)
 
-Download: [[GitHub Mirror]](https://github.com/featherbear/UNSW-COMP6845-android/raw/master/SANS_DFPS_FOR585_v3.8_04-23.pdf) [[CyberBlue.pro Mirror]](https://cyberblue.pro/Sans_Posters/) [[Internet Archive Mirror]](https://web.archive.org/web/20180629023352/https://www.sans.org/security-resources/posters/dfir-advanced-smartphone-forensics/30/download)
+Download: [[Internet Archive Mirror]](https://web.archive.org/web/20180629023352/https://www.sans.org/security-resources/posters/dfir-advanced-smartphone-forensics/30/download)
 
 ---
 
@@ -49,5 +49,5 @@ Download: [[GitHub Mirror]](https://github.com/featherbear/UNSW-COMP6845-android
 > Acquire is a tool to create forensic images of iOS and Android devices, as well as hard drives and other storage mediums
 
 The image of the Google Pixel 6 Pro phone has already been acquired so this is not required for the lab.  
-However if you wish to try out the program in your own time you may download it [here (Windows only)](https://www.magnetforensics.com/dl/acquire)
+However if you wish to try out the program in your own time you may download it [here](https://www.magnetforensics.com/dl/acquire) (Windows only)
 
